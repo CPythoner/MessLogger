@@ -18,13 +18,7 @@ VOID log_std_thread();
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	// 以独占方式打开文件
-	//FILE * fp = _fsopen("D:\\_vts_repo\\vts-for-windows\\module_solution\\modules\\fun_modules\\fun_messlogger\\branches\\v1.0.0\\Release\\logs\\lanxum_20190425.log", "a+", _SH_DENYRW);	// 最后一个参数表示共享方式打开文件
-	//if (fp == NULL)
-	//	printf("文件打开失败。");
-
-
-	g_pLogger->Init(30, "\\logs\\lanxum_%date.log", MessLogger::LEVEL_ALL, true);
+	g_pLogger->Init(30, "\\logs\\log_%date.txt", MessLogger::LEVEL_ALL, true);
 
 	for (uint8_t i = 0; i < 10; i++)
 	{
@@ -50,7 +44,6 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	system("pause");
 
-	//fclose(fp);
 	return 0;
 }
 
