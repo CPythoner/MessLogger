@@ -5,7 +5,7 @@ MessLogger是一个线程安全、使用简单的 C++ 日志库，使用 c 方�
 - 线程安全；
 - 日志路径支持绝对路径和相对路径；
 - 日志路径支持 `%date`  占位符，可用日期命名；
-- 八个日志界别：LEVEL_ALL、LEVEL_TRACE、LEVEL_DEBUG、LEVEL_INFO、LEVEL_WARN、LEVEL_ERROR、LEVEL_FATAL、LEVEL_OFF 
+- 八个日志级别：LEVEL_ALL、LEVEL_TRACE、LEVEL_DEBUG、LEVEL_INFO、LEVEL_WARN、LEVEL_ERROR、LEVEL_FATAL、LEVEL_OFF 
 - 线程 ID 打印可配置。
 
 
